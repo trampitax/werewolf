@@ -1,0 +1,54 @@
+No te entiendo. Puedes ver todos los comandos disponibles usando !ww help
+El nombre de la villa ha sido cambiado
+El nombre de la villa solo puede ser cambiado antes de que comience la partida!
+Partida creada! Teneis 3 minutos para uniros a la partida usando el comando !ww join
+Ya hay una partida creada
+ ha entrado en la partida!
+ ya te habías unido a la partida anteriormente
+Ya hay una partida en curso
+No hay ninguna partida creada. Para crear una usa !ww create
+ ha abandonado la partida!
+ no estabas dentro de la partida
+Los jugadores actuales son:
+Resultado de la partida:
+Crea una nueva partida al mismo tiempo que te introduce en ella
+Te une a la partida que está creada
+Abandona la partida actual
+Empieza la partida ignorando el tiempo restante que queda
+Lista los jugadores que hay en la partida actual, así como sus estados
+Se usa para votar que jugador será linchado. Solo puede usarse durante el día
+Con el decides a quien despedazar. Uso restringido solo a licántropos!
+Cambia el nombre de la villa
+Hace justo lo que estás viendo
+Muestra info sobre el bot en general
+Cambia el idioma del bot. Inglés (english) y español (spanish) unicamente disponibles por ahora
+Se necesitan un mínimo de 4 jugadores para poder jugar
+ ha votado a 
+Ese jugado no existe
+Tan desesperado estás como para votarte a ti mismo? :(
+Ya has votado esta ronda
+Solo se puede votar por el día!
+Qué vas a votar desde la tumba o que máquina?
+Has votado comerte a 
+Los hombres lobo son los únicos que pueden asesinar durante la noche!
+Solo se puede asesinar por la noche!
+ ha sido apaleado hasta la muerte y ha resultado ser un... 
+Hoy, los habitantes de villa 
+ han decidido que no iban a colgar a nadie y en lugar de eso se han comido un buen solomillo.
+Se hace de noche en villa 
+, y todos sus aldeanos se van a dormir... Pero mientras duermen los hombres lobo se despiertan.
+Los hombres lobo tienen 1'5 minutos para decidir a quien se meriendan está noche!
+Usa !ww kill numero para votar a quien os cenais!
+Hace una preciosa mañana en villa 
+, excepto para 
+ que ha muerto entre terrible sufrimiento.
+Amanece en villa 
+ aunque parece que esta noche no ha habido bajas. Aún así sabeis que hay un traidor entre vuestras filas...
+Debéis votar a alguien para deshaceros de él! Tenéis 2 minutos!
+Recordad que para votar a alguien debeis usar el comando !ww vote y el número que querais votar.
+Han ganado los Hombres Lobo!
+Han ganado los Aldeanos!
+Idioma cambiado correctamente!
+El juego no está disponible en ese idioma
+Queda 1 minuto para uniros!
+Os quedan 30 segundos!

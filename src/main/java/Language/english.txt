@@ -1,0 +1,54 @@
+I don't understand you. You can check all available commands using !ww help
+The name of the village has been changed successfully!
+The name of the village can only be changed before the game starts!
+Game created! You have 3 minutes to join the game using the command !ww join
+There is already a game created
+ has joined the game!
+ you already had joined the game before
+There is already a game in progress
+There isn't any game created. To create one use !ww create
+ has leaved the game!
+ you were not playing the actual game
+The actual players are:
+Result of the game:
+Creates a new game at the same time that it join you into it
+Joins you to the created game
+Leaves the actual game
+Starts the game ignoring the remaining time
+Lists all the players of the actual game, as well as their status
+It's used for voting the player who will be lynched. It only can be used during the day
+With it, you decide who you want to shred. Use restricted to lycanthropes!
+Changes the name of the village
+Change the actual language of the bot. English and spanish only available at the moment
+It does exactly what you are seeing
+It shows general information about the bot
+It's needed at least 4 players to start a game
+ has voted for
+That player doesn't exists
+Are you desperate enough to vote yourself? :(
+You have already voted this round
+You can only vote during the day!
+Are you going to vote from your coffin or what?
+You have voted for eating
+Only werewolves can murder during the night!
+You can only murder during the night!
+ has been beaten till death and has turned out to be a...
+Today, the habitants of
+ village have decided that they won't hang nobody on the gallows and instead of that they are going to eat a good sirloin.
+It's getting darker on
+ village, and all the villagers are going to bed... But as they sleep, the werewolves wake up.
+The werewolves have 1'5 minutes to decide who they will have for dinner tonight!
+Use !ww kill number to choose your dinner!
+There is a beautiful morning in
+ village, except for
+ who died in strange circumstances...
+The sun raises in
+ village, but it seems that nobody died tonight... Despite of that, you all know that there is a traitor among you...
+You must vote for killing someone! You all have 2 minutes to decide!
+Remember that for voting for someone, you have to use the command !ww vote number
+Werewolves have won the game!
+Villagers have won the game!
+Language changed correctly!
+The game is not available in that language
+1 minute left to start the game!
+You have 30 seconds left!
