@@ -19,7 +19,7 @@ Lists all the players of the actual game, as well as their status
 It's used for voting the player who will be lynched. It only can be used during the day
 With it, you decide who you want to shred. Use restricted to lycanthropes!
 Changes the name of the village
-Change the actual language of the bot. English and spanish only available at the moment
+Change the actual language of the bot
 It does exactly what you are seeing
 It shows general information about the bot
 It's needed at least 4 players to start a game
@@ -52,3 +52,7 @@ Language changed correctly!
 The game is not available in that language
 1 minute left to start the game!
 You have 30 seconds left!
+You can only play in the #werewolf channel!
+The game started and you are a
+Villager
+Werewolf

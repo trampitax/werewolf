@@ -15,7 +15,6 @@ public class Main extends ListenerAdapter {
         builder.setToken(Token.getToken());
         Main myBot = new Main();
         builder.addEventListener(myBot);
-//        builder.buildAsync();
         builder.buildAsync().getPresence().setGame(Game.of(Game.GameType.DEFAULT, "Prefix: !ww")); //Thanks Alex
     }
 
@@ -41,15 +40,12 @@ public class Main extends ListenerAdapter {
                 if (event.getChannel().getName().equalsIgnoreCase("werewolf")) {
                     games.get(serverId).director(event, message);
                 } else {
-                    event.getChannel().sendMessage("Solo se puede jugar en el canal #werewolf").queue();
+                    event.getChannel().sendMessage(games.get(serverId).language.get("onlyPlayAtWerewolfChannel")).queue();
                 }
                 break;
 //            case "!talk":
 //                event.getChannel().sendMessage(event.getMessage().getContentDisplay().substring(5)).queue();
 //                break;
-            case "!closeww":
-                System.exit(0);
-                break;
         }
     }
 }

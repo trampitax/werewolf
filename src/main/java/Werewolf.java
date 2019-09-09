@@ -105,7 +105,6 @@ public class Werewolf {
     }
 
     private void prepareGame() {
-        //TODO restablecer todas las variables necesarias y poner maps y etc a null si es necesario.
         this.gameCreated = false;
         this.gameStarted = false;
         this.gameEnded = false;
@@ -181,7 +180,7 @@ public class Werewolf {
                 }
             } else if (this.gameCreated && this.gameStarted) {
                 for (String name : playerNames) {
-                    if (this.currentPlayers.get(name).getRole().equalsIgnoreCase("Hombre Lobo")) {
+                    if (this.currentPlayers.get(name).getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                         emoji = " :wolf:";
                     } else {
                         emoji = " :bust_in_silhouette:";
@@ -199,7 +198,7 @@ public class Werewolf {
         } else {
             message = this.language.get("resultOfTheGame")+"\n";
             for (String name : playerNames) {
-                if (this.currentPlayers.get(name).getRole().equalsIgnoreCase("Hombre Lobo")) {
+                if (this.currentPlayers.get(name).getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     emoji = ":wolf:";
                 } else {
                     emoji = ":bust_in_silhouette:";
@@ -227,7 +226,7 @@ public class Werewolf {
         eb.addField("!ww kill", this.language.get("helpKill"), false);
         eb.addBlankField(true);
         eb.addField("!ww villagename name", this.language.get("helpVillageName"), false);
-        eb.addField("!ww language yourLanguage", this.language.get("helpLanguage"), false);
+        eb.addField("!ww language English || Spanish", this.language.get("helpLanguage"), false);
         eb.addField("!ww help", this.language.get("helpHelp"), false);
         eb.addField("!ww info", this.language.get("helpInfo"), false);
         this.event.getChannel().sendMessage(eb.build()).queue();
@@ -265,20 +264,17 @@ public class Werewolf {
 
             ArrayList<String> usernames = new ArrayList<>(this.currentPlayers.keySet());
             Collections.shuffle(usernames);
-            System.out.println(werewolves + "hombres lobo en esta partida");
             for (String name : usernames) {
                 Player player = this.currentPlayers.get(name);
                 if (werewolves != 0) {
-                    player.setRole("Hombre Lobo");
+                    player.setRole(this.language.get("werewolf"));
                     werewolves--;
                 } else {
-                    player.setRole("Aldeano");
+                    player.setRole(this.language.get("villager"));
                 }
 
                 if (!player.getDiscordUser().isBot()) {
-                    player.getDiscordUser().openPrivateChannel().queue((channel) -> channel.sendMessage("La partida ha empezado y eres un " + player.getRole()).queue());
-                } else {
-                    System.out.println("el puto bot es " + player.getRole());
+                    player.getDiscordUser().openPrivateChannel().queue((channel) -> channel.sendMessage(this.language.get("gameStartedAndYouAre") + player.getRole()).queue());
                 }
             }
 
@@ -323,12 +319,12 @@ public class Werewolf {
         if (this.gameStarted && this.currentPlayers.containsKey(this.authorName) && !this.currentPlayers.get(this.authorName).isAlreadyVoted() && this.night && this.currentPlayers.get(this.authorName).isAlive()) {
             if (this.votations.containsKey(Integer.parseInt(victim)) && !this.votations.get(Integer.parseInt(victim)).getUsername().equalsIgnoreCase(this.authorName)) {
 
-                if (this.currentPlayers.get(this.authorName).getRole().equalsIgnoreCase("Hombre Lobo")) {
+                if (this.currentPlayers.get(this.authorName).getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     this.votations.get(Integer.parseInt(victim)).vote();
                     this.currentPlayers.get(this.authorName).setAlreadyVoted(true);
 
                     message = this.language.get("killVoteSucessful") + this.votations.get(Integer.parseInt(victim)).getUsername() + "!\n\n";
-                } else if (!this.currentPlayers.get(this.authorName).getRole().equalsIgnoreCase("Hombre Lobo")) {
+                } else if (!this.currentPlayers.get(this.authorName).getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     message = this.language.get("killVoteFailed");
                 }
                 //TODO deberian todos los hombres lobo saber quienes son hombres lobo?
@@ -379,7 +375,7 @@ public class Werewolf {
             int id = 1;
             for (Player player : this.currentPlayers.values()) {
                 player.setAlreadyVoted(false);
-                if (player.isAlive() && !player.getRole().equalsIgnoreCase("Hombre Lobo")) {
+                if (player.isAlive() && !player.getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     this.votations.put(id, new Candidate(player.getUsername()));
                     id++;
                 }
@@ -392,7 +388,7 @@ public class Werewolf {
             }
 
             for (Player player : this.currentPlayers.values()) {
-                if (player.getRole().equalsIgnoreCase("Hombre Lobo")) {
+                if (player.getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     String finalCandidates = candidates;
                     player.getDiscordUser().openPrivateChannel().queue((channel) -> channel.sendMessage(finalCandidates).queue());
                 }
@@ -447,7 +443,6 @@ public class Werewolf {
             // Now all users have to vote someone
             new Stopwatch().start(60 * 2, this, "startNight"); // Timer 2' 00''
         } else {
-            System.out.println("kek");
             this.prepareGame();
         }
     }
@@ -485,13 +480,10 @@ public class Werewolf {
 
         for (Player player : this.currentPlayers.values()) {
             if (player.isAlive()) {
-                switch (player.getRole()) {
-                    case "Hombre Lobo":
-                        aliveWerewolves++;
-                        break;
-                    case "Aldeano":
-                        aliveVillagers++;
-                        break;
+                if(player.getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
+                    aliveWerewolves++;
+                } else {
+                    aliveVillagers++;
                 }
             }
         }

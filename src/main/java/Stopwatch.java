@@ -27,11 +27,11 @@ public class Stopwatch {
                             }
                             break;
                         case "startNight":
-                            System.out.println("Noche iniciada");
+                            System.out.println("Night Started");
                             game.night();
                             break;
                         case "startDay":
-                            System.out.println("Día finalizada");
+                            System.out.println("Day finished");
                             game.day();
                             break;
                     }

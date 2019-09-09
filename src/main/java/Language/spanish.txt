@@ -21,7 +21,7 @@ Con el decides a quien despedazar. Uso restringido solo a licántropos!
 Cambia el nombre de la villa
 Hace justo lo que estás viendo
 Muestra info sobre el bot en general
-Cambia el idioma del bot. Inglés (english) y español (spanish) unicamente disponibles por ahora
+Cambia el idioma del bot
 Se necesitan un mínimo de 4 jugadores para poder jugar
  ha votado a 
 Ese jugado no existe
@@ -52,3 +52,7 @@ Idioma cambiado correctamente!
 El juego no está disponible en ese idioma
 Queda 1 minuto para uniros!
 Os quedan 30 segundos!
+Solo se puede jugar en el canal #werewolf
+La partida ha empezado y eres un
+Aldeano
+Hombre Lobo

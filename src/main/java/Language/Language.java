@@ -82,6 +82,14 @@ public class Language {
         map.put("stopwatch1MinuteLeft","");
         map.put("stopwatch30SecsLeft","");
 
+        map.put("onlyPlayAtWerewolfChannel","");
+
+        map.put("gameStartedAndYouAre","");
+
+
+        map.put("villager","");
+        map.put("werewolf","");
+
         return map;
     }
 
@@ -114,9 +122,5 @@ public class Language {
                 e.printStackTrace();
             }
         }
-
-//        for(Map.Entry<String, String> xdd : map.entrySet()){
-//            System.out.println(xdd.getKey()+"\t"+xdd.getValue());
-//        }
     }
 }
