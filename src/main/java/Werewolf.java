@@ -63,7 +63,7 @@ public class Werewolf {
                     break;
                 case "language":
                     if(message[2].equalsIgnoreCase("english") || message[2].equalsIgnoreCase("spanish")){
-                        Language.changeLanguage(message[2], this.language);
+                        Language.changeLanguage(message[2].toLowerCase(), this.language);
                         channel.sendMessage(this.language.get("languageChangedSuccessful")).queue();
                     } else {
                         channel.sendMessage(this.language.get("languageChangedFailed")).queue();
