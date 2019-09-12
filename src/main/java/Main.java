@@ -46,6 +46,9 @@ public class Main extends ListenerAdapter {
 //            case "!talk":
 //                event.getChannel().sendMessage(event.getMessage().getContentDisplay().substring(5)).queue();
 //                break;
+            case "!closeww":
+                System.exit(0);
+                break;
         }
     }
 }
