@@ -144,9 +144,9 @@ public class Werewolf {
             // Checking if the user is in the current game and if he's not, putting him in.
             if (!this.currentPlayers.containsKey(this.authorName)) {
                 this.currentPlayers.put(this.authorName, new Player(this.authorName, "Waiting Player", true, this.event.getAuthor()));
-                this.event.getChannel().sendMessage(this.authorName + this.language.get("joinGameSuccessful")).queue();
+                this.event.getChannel().sendMessage(this.language.get("joinGameSuccessful").replace("PLAYER", this.authorName)).queue();
             } else {
-                this.event.getChannel().sendMessage(this.authorName + this.language.get("joinGameAlreadyIn")).queue();
+                this.event.getChannel().sendMessage(this.language.get("joinGameAlreadyIn").replace("PLAYER", this.authorName)).queue();
             }
         } else if (this.gameStarted) {
             this.event.getChannel().sendMessage(this.language.get("joinGameAlreadyStarted")).queue();
@@ -159,9 +159,9 @@ public class Werewolf {
         if (this.gameCreated && !this.gameStarted) {
             if (this.currentPlayers.containsKey(this.authorName)) {
                 this.currentPlayers.remove(this.event.getAuthor().getName());
-                this.event.getChannel().sendMessage(this.authorName + this.language.get("leaveGameSuccessful")).queue();
+                this.event.getChannel().sendMessage(this.language.get("leaveGameSuccessful").replace("PLAYER", this.authorName)).queue();
             } else {
-                this.event.getChannel().sendMessage(this.authorName + this.language.get("leaveGameFailed")).queue();
+                this.event.getChannel().sendMessage(this.language.get("leaveGameFailed").replace("PLAYER", this.authorName)).queue();
             }
         } else if (this.gameCreated && this.gameStarted) {
             //TODO falta hacer que se borre tambien del juego mientras se esté jugando

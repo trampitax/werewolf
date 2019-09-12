@@ -14,14 +14,14 @@ public class Language {
         map.put("gameCreatedSuccessful", "");
         map.put("gameCreatedFailed", "");
 
-        map.put("joinGameSuccessful", "");
-        map.put("joinGameAlreadyIn", "");
+        map.put("joinGameSuccessful", ""); // Line 6
+        map.put("joinGameAlreadyIn", ""); // Line 7
 
         map.put("joinGameAlreadyStarted", "");
         map.put("joinGameNoGameCreated", "");
 
-        map.put("leaveGameSuccessful", "");
-        map.put("leaveGameFailed", "");
+        map.put("leaveGameSuccessful", ""); // Line 10
+        map.put("leaveGameFailed", ""); // Line 11
 
         map.put("actualPlayers", "");
         map.put("resultOfTheGame", "")
