@@ -33,17 +33,12 @@ Has votado comerte a PLAYER
 Los hombres lobo son los únicos que pueden asesinar durante la noche!
 Solo se puede asesinar por la noche!
 PLAYER ha sido apaleado hasta la muerte y ha resultado ser un...
-Hoy, los habitantes de villa 
-VILLAGENAME han decidido que no iban a colgar a nadie y en lugar de eso se han comido un buen solomillo.
-Se hace de noche en villa 
-VILLAGENAME, y todos sus aldeanos se van a dormir... Pero mientras duermen los hombres lobo se despiertan.
+Hoy, los habitantes de villa VILLAGENAME han decidido que no iban a colgar a nadie y en lugar de eso se han comido un buen solomillo.
+Se hace de noche en villa VILLAGENAME, y todos sus aldeanos se van a dormir... Pero mientras duermen los hombres lobo se despiertan.
 Los hombres lobo tienen 1'5 minutos para decidir a quien se meriendan está noche!
 Usa !ww kill numero para votar a quien os cenais!
-Hace una preciosa mañana en villa 
-VILLAGENAME, excepto para PLAYER
- que ha muerto entre terrible sufrimiento.
-Amanece en villa 
-VILLAGENAME aunque parece que esta noche no ha habido bajas. Aún así sabeis que hay un traidor entre vuestras filas...
+Hace una preciosa mañana en villa VILLAGENAME, excepto para PLAYER que ha muerto entre terrible sufrimiento.
+Amanece en villa VILLAGENAME aunque parece que esta noche no ha habido bajas. Aún así sabeis que hay un traidor entre vuestras filas...
 Debéis votar a alguien para deshaceros de él! Tenéis 2 minutos!
 Recordad que para votar a alguien debeis usar el comando !ww vote y el número que querais votar.
 Han ganado los Hombres Lobo!

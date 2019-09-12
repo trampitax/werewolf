@@ -42,18 +42,18 @@ public class Language {
 
         map.put("minimumPlayers", "");
 
-        map.put("voteSuccessful", "");
+        map.put("voteSuccessful", ""); // Line 26
         map.put("playerDoesntExists", "");
         map.put("votingOwnSelf", "");
         map.put("alreadyVotedThisRound", "");
         map.put("votingAtNight", "");
         map.put("votingDead", "");
 
-        map.put("killVoteSucessful", "");
+        map.put("killVoteSucessful", ""); // Line 32
         map.put("killVoteFailed", "");
         map.put("killingAtDay", "");
 
-        map.put("nightVictimSuccessful", "");
+        map.put("nightVictimSuccessful", ""); // Line 35
         map.put("nightVictimNone", "");
         map.put("nightVictimNone2", "");
 

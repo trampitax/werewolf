@@ -32,18 +32,13 @@ Are you going to vote from your coffin or what?
 You have voted for eating PLAYER
 Only werewolves can murder during the night!
 You can only murder during the night!
-PLAYER has been beaten till death and has turned out to be a... ROLE
-Today, the habitants of
-VILLAGENAME village have decided that they won't hang nobody on the gallows and instead of that they are going to eat a good sirloin.
-It's getting darker on
-VILLAGENAME village, and all the villagers are going to bed... But as they sleep, the werewolves wake up.
+PLAYER has been beaten till death and has turned out to be a... ROLE!
+Today, the habitants of VILLAGENAME village have decided that they won't hang nobody on the gallows and instead of that they are going to eat a good sirloin.
+It's getting darker on VILLAGENAME village, and all the villagers are going to bed... But as they sleep, the werewolves wake up.
 The werewolves have 1'5 minutes to decide who they will have for dinner tonight!
 Use !ww kill number to choose your dinner!
-There is a beautiful morning in
-VILLAGENAME village, except for
-PLAYER who died in strange circumstances...
-The sun raises in
-VILLAGENAME village, but it seems that nobody died tonight... Despite of that, you all know that there is a traitor among you...
+There is a beautiful morning in VILLAGENAME village, except for PLAYER who died in strange circumstances...
+The sun raises in VILLAGENAME village, but it seems that nobody died tonight... Despite of that, you all know that there is a traitor among you...
 You must vote for killing someone! You all have 2 minutes to decide!
 Remember that for voting for someone, you have to use the command !ww vote number
 Werewolves have won the game!

@@ -289,7 +289,7 @@ public class Werewolf {
                 this.votations.get(Integer.parseInt(vote)).vote();
                 this.currentPlayers.get(this.authorName).setAlreadyVoted(true);
 
-                message = this.authorName + this.language.get("voteSuccessful") + this.votations.get(Integer.parseInt(vote)).getUsername() + "!\n\n";
+                message = this.language.get("voteSuccessful").replace("PLAYER1", this.authorName).replace("PLAYER2", this.votations.get(Integer.parseInt(vote)).getUsername()) + "\n\n";
                 for (Map.Entry<Integer, Candidate> candidate : this.votations.entrySet()) {
                     message += candidate.getKey() + " - " + candidate.getValue().getUsername() + "\t-->\t" + candidate.getValue().getVotes() + '\n';
                 }
@@ -323,7 +323,7 @@ public class Werewolf {
                     this.votations.get(Integer.parseInt(victim)).vote();
                     this.currentPlayers.get(this.authorName).setAlreadyVoted(true);
 
-                    message = this.language.get("killVoteSucessful") + this.votations.get(Integer.parseInt(victim)).getUsername() + "!\n\n";
+                    message = this.language.get("killVoteSucessful").replace("PLAYER", this.votations.get(Integer.parseInt(victim)).getUsername()) + "!\n\n";
                 } else if (!this.currentPlayers.get(this.authorName).getRole().equalsIgnoreCase(this.language.get("werewolf"))) {
                     message = this.language.get("killVoteFailed");
                 }
@@ -358,7 +358,7 @@ public class Werewolf {
             this.checkWin();
 
             if (this.victimLastNight && !this.gameEnded) {
-                this.event.getChannel().sendMessage(this.victimName + this.language.get("nightVictimSuccessful") + this.currentPlayers.get(this.victimName).getRole() + '!').queue();
+                this.event.getChannel().sendMessage(this.language.get("nightVictimSuccessful").replace("PLAYER", this.victimName).replace("ROLE", this.currentPlayers.get(this.victimName).getRole()) + '!').queue();
                 this.listPlayers();
             } else if (!this.victimLastNight) {
                 this.event.getChannel().sendMessage(this.language.get("nightVictimNone") + this.villageName + this.language.get("nightVictimNone2")).queue();
