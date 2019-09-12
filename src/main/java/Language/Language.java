@@ -24,8 +24,8 @@ public class Language {
         map.put("leaveGameFailed", ""); // Line 11
 
         map.put("actualPlayers", "");
-        map.put("resultOfTheGame", "")
-        ;
+        map.put("resultOfTheGame", "");
+
         map.put("helpCreate", "");
         map.put("helpJoin", "");
         map.put("helpLeave", "");
@@ -54,24 +54,19 @@ public class Language {
         map.put("killingAtDay", "");
 
         map.put("nightVictimSuccessful", ""); // Line 35
-        map.put("nightVictimNone", "");
-        map.put("nightVictimNone2", "");
+        map.put("nightVictimNone", ""); // Line 36
 
-        map.put("nightStarting", "");
-        map.put("nightStarting2", "");
-        map.put("nightStarting3", "");
+        map.put("nightStarting", ""); // Line 37
+        map.put("nightStarting2", ""); // Line 38
 
         map.put("nightCandidatesMessage", "");
 
-        map.put("morningVictimSuccessful", "");
-        map.put("morningVictimSuccessful2", "");
-        map.put("morningVictimSuccessful3", "");
+        map.put("morningVictimSuccessful", ""); // Line 40
 
-        map.put("morningVictimNone", "");
-        map.put("morningVictimNone2", "");
+        map.put("morningVictimNone", ""); // Line 41
 
         map.put("morningVictimFinal", "");
-        map.put("morningVictimFinal2", "");
+        map.put("morningVictimFinal2", ""); // KEEP Line 43
 
         map.put("winWerewolves", "");
         map.put("winVillagers", "");
@@ -84,7 +79,7 @@ public class Language {
 
         map.put("onlyPlayAtWerewolfChannel","");
 
-        map.put("gameStartedAndYouAre","");
+        map.put("gameStartedAndYouAre",""); // Line 51
 
 
         map.put("villager","");

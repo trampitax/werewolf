@@ -62,7 +62,7 @@ public class Werewolf {
                     this.changeVillageName(message[2]);
                     break;
                 case "language":
-                    if(message[2].equalsIgnoreCase("english") || message[2].equalsIgnoreCase("spanish")){
+                    if(message[2].equalsIgnoreCase("english") || message[2].equalsIgnoreCase("spanish") || message[2].equalsIgnoreCase("persian")){
                         Language.changeLanguage(message[2].toLowerCase(), this.language);
                         channel.sendMessage(this.language.get("languageChangedSuccessful")).queue();
                     } else {
@@ -226,7 +226,7 @@ public class Werewolf {
         eb.addField("!ww kill", this.language.get("helpKill"), false);
         eb.addBlankField(true);
         eb.addField("!ww villagename name", this.language.get("helpVillageName"), false);
-        eb.addField("!ww language English || Spanish", this.language.get("helpLanguage"), false);
+        eb.addField("!ww language English | Spanish | Persian", this.language.get("helpLanguage"), false);
         eb.addField("!ww help", this.language.get("helpHelp"), false);
         eb.addField("!ww info", this.language.get("helpInfo"), false);
         this.event.getChannel().sendMessage(eb.build()).queue();
@@ -274,7 +274,7 @@ public class Werewolf {
                 }
 
                 if (!player.getDiscordUser().isBot()) {
-                    player.getDiscordUser().openPrivateChannel().queue((channel) -> channel.sendMessage(this.language.get("gameStartedAndYouAre") + player.getRole()).queue());
+                    player.getDiscordUser().openPrivateChannel().queue((channel) -> channel.sendMessage(this.language.get("gameStartedAndYouAre").replace("ROLE", player.getRole())).queue());
                 }
             }
 
@@ -361,13 +361,13 @@ public class Werewolf {
                 this.event.getChannel().sendMessage(this.language.get("nightVictimSuccessful").replace("PLAYER", this.victimName).replace("ROLE", this.currentPlayers.get(this.victimName).getRole()) + '!').queue();
                 this.listPlayers();
             } else if (!this.victimLastNight) {
-                this.event.getChannel().sendMessage(this.language.get("nightVictimNone") + this.villageName + this.language.get("nightVictimNone2")).queue();
+                this.event.getChannel().sendMessage(this.language.get("nightVictimNone").replace("VILLAGENAME", this.villageName)).queue();
             }
         }
 
 
         if (!this.gameEnded) {
-            this.event.getChannel().sendMessage(this.language.get("nightStarting") + this.villageName + this.language.get("nightStarting2") + "\n\n" + this.language.get("nightStarting3")).queue();
+            this.event.getChannel().sendMessage(this.language.get("nightStarting").replace("VILLAGENAME", this.villageName) + "\n\n" + this.language.get("nightStarting2")).queue();
 
             this.firstNight = false;
             //Creating the votation box which contains the alive players
@@ -412,10 +412,10 @@ public class Werewolf {
 
         if (!this.gameEnded) {
             if (this.victimLastNight) {
-                message = this.language.get("morningVictimSuccessful") + this.villageName + this.language.get("morningVictimSuccessful2") + this.victimName + this.language.get("morningVictimSuccessful3");
+                message = this.language.get("morningVictimSuccessful").replace("VILLAGENAME", this.villageName).replace("PLAYER", this.victimName);
                 this.listPlayers();
             } else {
-                message = this.language.get("morningVictimNone") + this.villageName + this.language.get("morningVictimNone2");
+                message = this.language.get("morningVictimNone").replace("VILLAGENAME", this.villageName);
             }
 
             message += "\n" + this.language.get("morningVictimFinal") + "\n\n" + this.language.get("morningVictimFinal2");

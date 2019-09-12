@@ -3,7 +3,9 @@
 ## Languages availables
 - English
 - Spanish
+- Persian
 
+Thanks to Ariahhl1 for the persian translation!
 
 ## What is this?
 Just the simple version of the game now available on Discord. It's based on the game "The werewolves of millers hollow", a board game for eight or more players.

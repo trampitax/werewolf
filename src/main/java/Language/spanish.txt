@@ -32,7 +32,7 @@ Qué vas a votar desde la tumba o que máquina?
 Has votado comerte a PLAYER
 Los hombres lobo son los únicos que pueden asesinar durante la noche!
 Solo se puede asesinar por la noche!
-PLAYER ha sido apaleado hasta la muerte y ha resultado ser un...
+PLAYER ha sido apaleado hasta la muerte y ha resultado ser un... ROLE!
 Hoy, los habitantes de villa VILLAGENAME han decidido que no iban a colgar a nadie y en lugar de eso se han comido un buen solomillo.
 Se hace de noche en villa VILLAGENAME, y todos sus aldeanos se van a dormir... Pero mientras duermen los hombres lobo se despiertan.
 Los hombres lobo tienen 1'5 minutos para decidir a quien se meriendan está noche!
@@ -48,6 +48,6 @@ El juego no está disponible en ese idioma
 Queda 1 minuto para uniros!
 Os quedan 30 segundos!
 Solo se puede jugar en el canal #werewolf
-La partida ha empezado y eres un
+La partida ha empezado y eres un ROLE
 Aldeano
 Hombre Lobo

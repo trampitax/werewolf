@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c34178e7-b691-4aea-9bc4-76ec88d6dece" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Language/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Language/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Language/english.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Language/english.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Language/spanish.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Language/spanish.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Werewolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Werewolf.java" afterDir="false" />
     </list>
@@ -18,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="57520" />
+    <option name="totalTimeSeconds" value="60836" />
     <option name="naggedAbout" value="1" />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -31,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
+            <state relative-caret-position="644">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Werewolf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="360" column="52" lean-forward="true" selection-start-line="360" selection-start-column="52" selection-end-line="360" selection-end-column="52" />
+            <state relative-caret-position="219">
+              <caret line="64" column="143" selection-start-line="64" selection-start-column="136" selection-end-line="64" selection-end-column="143" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Language/Language.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="55" column="38" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="38" />
+            <state relative-caret-position="1672">
+              <caret line="77" column="27" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,19 +69,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Language/english.txt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Language/spanish.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="43" column="24" selection-start-line="43" selection-end-line="44" />
+            <state relative-caret-position="770">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Language/spanish.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Language/english.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="35" column="81" lean-forward="true" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+            <state relative-caret-position="1100">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -96,29 +97,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Token</find>
-      <find>static</find>
-      <find>)</find>
-      <find>thread</find>
-      <find>stop</find>
-      <find>prepare</find>
-      <find>game</find>
-      <find>Stop</find>
-      <find>1.</find>
-      <find>config</find>
-      <find>match</find>
-      <find>No hay ninguna partida en curso</find>
-      <find>actu</find>
-      <find>the actual player</find>
-      <find>understand</find>
-      <find>timer</find>
-      <find>1.2</find>
-      <find>Language</find>
-      <find>language</find>
-      <find>Aldeano</find>
       <find>hombre</find>
       <find>español</find>
-      <find>english</find>
       <find>help</find>
       <find>changela</find>
       <find>joinGameAlreadyIn</find>
@@ -126,6 +106,27 @@
       <find>voteSuccessful</find>
       <find>killVoteSucessful</find>
       <find>nightVictimSuccessful</find>
+      <find>!</find>
+      <find>morningVictimFinal</find>
+      <find>nightCandidatesMessage</find>
+      <find>role</find>
+      <find>nightVictimNone</find>
+      <find>nightStarting</find>
+      <find>morningVictimSuccessful</find>
+      <find>morningVictimNone</find>
+      <find>gameStartedAndYouAre</find>
+      <find>3</find>
+      <find>&quot;ROLE&quot;</find>
+      <find>PLAYER</find>
+      <find>&quot;PLAYER&quot;</find>
+      <find>&quot;PLAYER1&quot;</find>
+      <find>&quot;VILLAGENAME&quot;</find>
+      <find>ROLE</find>
+      <find>VILLAGENAME</find>
+      <find>LANGUAGE</find>
+      <find>english</find>
+      <find>spanish</find>
+      <find>persian</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,16 +147,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stopwatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Language/Language.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Werewolf.java" />
         <option value="$PROJECT_DIR$/src/main/java/Language/english.txt" />
         <option value="$PROJECT_DIR$/src/main/java/Language/spanish.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/Language/Language.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Werewolf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Language/persian.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="626" />
-    <option name="y" value="-22" />
+    <option name="x" value="533" />
+    <option name="y" value="-15" />
     <option name="width" value="976" />
     <option name="height" value="1048" />
   </component>
@@ -194,17 +196,25 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="werewolf" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Language" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Language" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -231,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.werewolf [fatJar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="untitled1.main" />
@@ -279,8 +289,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.werewolf [fatJar]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.werewolf [dependencies]" />
       </list>
     </recent_temporary>
@@ -299,10 +309,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.47379914" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23134328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -397,13 +406,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Config/Config.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Config/Language.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -415,16 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,35 +432,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Language/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="38" />
+        <state relative-caret-position="1672">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Werewolf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="360" column="52" lean-forward="true" selection-start-line="360" selection-start-column="52" selection-end-line="360" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Language/english.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="43" column="24" selection-start-line="43" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Language/spanish.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="35" column="81" lean-forward="true" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+        <state relative-caret-position="770">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Language/english.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Language/persian.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" selection-start-line="2" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Werewolf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="64" column="143" selection-start-line="64" selection-start-column="136" selection-end-line="64" selection-end-column="143" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
