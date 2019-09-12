@@ -42,7 +42,7 @@ Use !ww kill number to choose your dinner!
 There is a beautiful morning in
 VILLAGENAME village, except for
 PLAYER who died in strange circumstances...
-The sun raises in 
+The sun raises in
 VILLAGENAME village, but it seems that nobody died tonight... Despite of that, you all know that there is a traitor among you...
 You must vote for killing someone! You all have 2 minutes to decide!
 Remember that for voting for someone, you have to use the command !ww vote number
