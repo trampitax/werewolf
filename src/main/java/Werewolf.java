@@ -15,6 +15,8 @@ public class Werewolf {
     private boolean firstNight;
     private boolean night;
 
+    private Stopwatch stopwatch = null;
+
     public Map<String, String> language;
     private String villageName;
 
@@ -115,9 +117,8 @@ public class Werewolf {
 
     private void forceStart() {
         if (!this.gameStarted && this.gameCreated) {
-//            new Stopwatch.cancel();
-//            this.startGame();
-            channel.sendMessage("This option is unavailable at the moment!").queue();
+            stopwatch.cancel();
+            this.startGame();
         }
     }
 
@@ -133,7 +134,8 @@ public class Werewolf {
             this.currentPlayers.put(this.authorName, new Player(this.authorName, "Waiting Player", true, this.event.getAuthor()));
             this.channel.sendMessage(this.language.get("gameCreatedSuccessful")).queue();
 
-            new Stopwatch().start(60 * 3, this, "startGame"); // Timer 3' 0''
+            stopwatch = new Stopwatch();
+            stopwatch.start(60 * 3, this, "startGame"); // Timer 3' 0''
         } else {
             this.channel.sendMessage(this.language.get("gameCreatedFailed")).queue();
         }
@@ -164,7 +166,9 @@ public class Werewolf {
                 this.event.getChannel().sendMessage(this.language.get("leaveGameFailed").replace("PLAYER", this.authorName)).queue();
             }
         } else if (this.gameCreated && this.gameStarted) {
-            //TODO falta hacer que se borre tambien del juego mientras se esté jugando
+            this.currentPlayers.get(this.authorName).setAlive(false);
+            this.event.getChannel().sendMessage(this.language.get("leaveGameSuccessful").replace("PLAYER", this.authorName)).queue();
+            this.listPlayers();
         }
     }
 
@@ -215,7 +219,7 @@ public class Werewolf {
 
     private void help() {
         EmbedBuilder eb = new EmbedBuilder();
-        eb.setTitle("Comandos");
+        eb.setTitle("Commands");
         eb.addField("!ww create", this.language.get("helpCreate"), false);
         eb.addField("!ww join", this.language.get("helpJoin"), false);
         eb.addField("!ww leave", this.language.get("helpLeave"), false);
@@ -235,7 +239,7 @@ public class Werewolf {
     private void info() {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle("Werewolf Bot");
-        eb.addField("Version", "1.3", true);
+        eb.addField("Version", "1.5", true);
         eb.addField("Author", "trampitax", true);
         eb.addField("Github", "https://github.com/trampitax", true);
         eb.addField("Discord", "trampitax#8978", true);
@@ -395,7 +399,8 @@ public class Werewolf {
             }
 
             // Now werewolves have to vote someone
-            new Stopwatch().start(90, this, "startDay"); // Timer 1' 30''
+            stopwatch = new Stopwatch();
+            stopwatch.start(90, this, "startDay"); // Timer 1' 30''
         } else {
             System.out.println("kek");
             this.prepareGame();
@@ -441,7 +446,8 @@ public class Werewolf {
 
             this.channel.sendMessage(candidates).queue();
             // Now all users have to vote someone
-            new Stopwatch().start(60 * 2, this, "startNight"); // Timer 2' 00''
+            stopwatch = new Stopwatch();
+            stopwatch.start(60 * 2, this, "startNight"); // Timer 2' 00''
         } else {
             this.prepareGame();
         }

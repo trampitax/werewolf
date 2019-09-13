@@ -9,6 +9,7 @@ import java.util.*;
 
 public class Main extends ListenerAdapter {
     private Map<String, Werewolf> games;
+    private Map<String, ArrayList<String>> userServers;
 
     public static void main(String[] args) throws LoginException {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
@@ -20,6 +21,7 @@ public class Main extends ListenerAdapter {
 
     Main() {
         games = new TreeMap<>();
+        userServers = new TreeMap<>();
     }
 
     @Override
@@ -27,28 +29,52 @@ public class Main extends ListenerAdapter {
         String message[] = event.getMessage().getContentDisplay().split(" ");
         String author = event.getAuthor().getName();
 
+        String serverId = "";
+        if(!event.getChannelType().toString().equals("PRIVATE")) {
+            serverId = event.getGuild().getId();
+        }
+        String userId = event.getAuthor().getId();
 
-        String serverId = event.getGuild().getId();
 //        System.out.println("SERVER --> "+event.getGuild().getName()+" "+serverId);
 
         if (!games.containsKey(serverId)) {
             games.put(serverId, new Werewolf());
         }
 
-        switch (message[0]) {
-            case "!ww":
-                if (event.getChannel().getName().equalsIgnoreCase("werewolf")) {
-                    games.get(serverId).director(event, message);
-                } else {
-                    event.getChannel().sendMessage(games.get(serverId).language.get("onlyPlayAtWerewolfChannel")).queue();
+
+        if (!userServers.containsKey(userId)) {
+            userServers.put(userId, new ArrayList<>());
+        }
+        if (!userServers.get(userId).contains(serverId)) {
+            userServers.get(userId).add(serverId);
+        }
+
+        if(event.getChannelType().toString().equals("PRIVATE") && !event.getAuthor().isBot()) {
+            for(String id : userServers.get(userId)) {
+                if(games.get(id).gameStarted) {
+                    games.get(id).director(event, message);
+                    break;
                 }
-                break;
+            }
+        } else if (event.getChannelType().toString().equals("TEXT") && !event.getAuthor().isBot()) {
+            switch (message[0]) {
+                case "!ww":
+                    if (event.getChannel().getName().equalsIgnoreCase("werewolf")) {
+                        games.get(serverId).director(event, message);
+                    } else {
+                        event.getChannel().sendMessage(games.get(serverId).language.get("onlyPlayAtWerewolfChannel")).queue();
+                    }
+                    break;
 //            case "!talk":
 //                event.getChannel().sendMessage(event.getMessage().getContentDisplay().substring(5)).queue();
 //                break;
-            case "!closeww":
-                System.exit(0);
-                break;
+                case "!closeww":
+                    System.exit(0);
+                    break;
+            }
         }
     }
 }
+
+// Nuevo mapa <USERID, ArrayList<SERVERID>
+// Se colocase una ID unica delante del mensaje al contestar por privado
