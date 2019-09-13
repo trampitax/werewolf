@@ -1,4 +1,6 @@
 # Werewolf Bot for Discord! (JDA)
+## What is this?
+Just the simple version of the game now available on Discord. It's based on the game "The werewolves of millers hollow", a board game for eight or more players.
 
 ## Languages availables
 - English
@@ -7,9 +9,9 @@
 
 Thanks to Ariahhl1 for the persian translation!
 
-## What is this?
-Just the simple version of the game now available on Discord. It's based on the game "The werewolves of millers hollow", a board game for eight or more players.
-
+## Availables roles at the moment
+- Villager
+- Werewolf
 
 ## Why you developed this?
 I'm studying web developing at the moment, but during my summer vacations I thought that it would be really nice to practice a bit before start studying again. The game is quite simple right now, I encourage you to check the code if you are feeling curious.
